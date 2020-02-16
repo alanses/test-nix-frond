@@ -1,0 +1,4 @@
+.pac-container.pac-logo::after {
+    content: '' !important;
+    display: none !important;
+}
