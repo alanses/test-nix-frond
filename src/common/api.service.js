@@ -61,28 +61,6 @@ export const AutificationService = {
   }
 };
 
-
-export const AchievementsService = {
-  getListAchievements(params) {
-    return ApiService.get('admin/achievements', params);
-  },
-  getAchievement(id) {
-    return ApiService.getByParam('admin/achievement', id);
-  },
-  createAchievement(params) {
-    return ApiService.post('admin/create/achievement', params);
-  },
-  updateAchievement(params) {
-    return ApiService.post('admin/update/achievement', params);
-  },
-  deleteAchievement(id) {
-    return ApiService.delete('admin/achievement', id);
-  },
-  getListActivitiesForSelect() {
-    return ApiService.get('admin/list/activities/for/select');
-  }
-};
-
 export const CategoriesService = {
     getListCategories(params) {
         return ApiService.get('categories', params);
@@ -102,5 +80,31 @@ export const CategoriesService = {
 
     deleteCategory(id) {
         return ApiService.delete('category', id);
+    },
+
+    getListCategoriesForSelect() {
+        return ApiService.get('categories-select');
+    }
+};
+
+export const ProductsService = {
+    getListProducts(params) {
+        return ApiService.get('products', params);
+    },
+
+    getProduct(id) {
+        return ApiService.getByParam('product', id);
+    },
+
+    createProduct(params) {
+        return ApiService.post('products', params);
+    },
+
+    updateProduct(id, params) {
+        return ApiService.update('product', id, params);
+    },
+
+    deleteProduct(id) {
+        return ApiService.delete('product', id);
     },
 };

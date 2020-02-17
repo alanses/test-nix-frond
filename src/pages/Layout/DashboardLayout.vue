@@ -5,8 +5,12 @@
         <side-bar>
             <mobile-menu slot="content"></mobile-menu>
             <sidebar-link to="/categories">
-                <i class="material-icons"></i>
+                <i class="material-icons">category</i>
                 <p>Categories</p>
+            </sidebar-link>
+            <sidebar-link to="/products">
+                <i class="material-icons">business_center</i>
+                <p>Products</p>
             </sidebar-link>
           <li class="md-list-item" @click="logout">
             <a class="md-list-item-router md-list-item-container md-button-clean">
