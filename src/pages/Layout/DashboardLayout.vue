@@ -12,6 +12,10 @@
                 <i class="material-icons">business_center</i>
                 <p>Products</p>
             </sidebar-link>
+            <sidebar-link to="/orders">
+                <i class="material-icons">business</i>
+                <p>Orders</p>
+            </sidebar-link>
           <li class="md-list-item" @click="logout">
             <a class="md-list-item-router md-list-item-container md-button-clean">
               <div class="md-list-item-content md-ripple">
