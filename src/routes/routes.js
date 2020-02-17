@@ -5,8 +5,10 @@ import CategoriesPage from "@/views/CategoriesPage.vue";
 import CategoryPage from "@/views/CategoryPage.vue";
 import ProductsPage from "@/views/ProductsPage.vue";
 import ProductPage from "@/views/ProductPage.vue";
+import OrdersPage from "@/views/OrdersPage.vue";
 import CreateCategoryPage from "@/views/CreateCategoryPage.vue";
 import CreateProductPage from "@/views/CreateProductPage.vue";
+import CreateOrderPage from "@/views/CreateOrderPage.vue";
 
 const routes = [
     {
@@ -44,6 +46,16 @@ const routes = [
                 path: "create/product",
                 name: "create_product",
                 component: CreateProductPage
+            },
+            {
+                path: "create/order",
+                name: "create_order",
+                component: CreateOrderPage
+            },
+            {
+                path: "orders",
+                name: "orders",
+                component: OrdersPage
             }
         ],
         meta: {

@@ -107,4 +107,18 @@ export const ProductsService = {
     deleteProduct(id) {
         return ApiService.delete('product', id);
     },
+
+    searchProductsByCategoryId(id) {
+        return ApiService.get('search-products', id);
+    }
+};
+
+export const OrdersService = {
+    getListOrders(params) {
+        return ApiService.get('statistic-orders', params);
+    },
+
+    createOrder(params) {
+        return ApiService.post('order', params);
+    }
 };

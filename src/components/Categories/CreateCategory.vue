@@ -45,7 +45,7 @@
         methods: {
             createCategory() {
                 CategoriesService.createCategory(this.getDataForCreateCategory()).then((result) => {
-                    this.activity = result.data.data;
+                    this.category = result.data.data;
                     this.showMessageWithSuccess();
                 }).catch((error) => {
                     if(error.response) {
